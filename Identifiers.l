@@ -1,0 +1,13 @@
+%{
+%}
+%%
+[a-zA-Z][a-zA-Z0-9]* {printf("\n IDENTIFIER");}
+.+ {printf("\n not INDENTIFIER");}
+%%
+int yywrap( )
+{}
+int main()
+{
+printf("enter the input");
+yylex();
+}
